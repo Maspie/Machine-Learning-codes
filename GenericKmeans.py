@@ -7,15 +7,7 @@ from sklearn.cluster import KMeans
 # Load your dataset
 data = pd.read_csv("./your_data.csv")  
 
-# Display first few rows for a quick peek
-print(data.head())
-
-# Check for null values, important for clean data analysis
-print(data.isnull().sum())
-
-# Choose the two columns you're interested in clustering
-# These should be based on your specific data and analysis goals
-col1, col2 = 'Column1', 'Column2'  # Replace with your column names
+col1, col2 = 'Column1', 'Column2'  
 
 # Preparing the data for clustering
 cluster_data = data[[col1, col2]]
