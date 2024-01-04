@@ -26,7 +26,7 @@ plt.xlabel('Number of Clusters')
 plt.ylabel('WCSS')
 plt.show()
 
-# Choose the number of clusters based on the elbow graph
+# Choose the number of clusters based on the elbow graph (for example 5)
 num_clusters = 5  
 
 # Applying KMeans clustering
