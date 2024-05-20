@@ -35,3 +35,47 @@ Apply L2 Regularization: Use weight_decay in the optimizer.
 Clip Gradients: Use nn_utils.clip_grad_norm_ during backpropagation.
 Train Models: Forward pass, compute loss, backpropagate, and update parameters.
 Verify Clipping: Print total norm of gradients to confirm clipping.
+
+### Recurrent
+
+- Key Features
+Data Preprocessing:
+
+- Standardization: Scale features and target values using StandardScaler.
+Train-Test Split: Split the data into training and testing sets.
+Dataset and DataLoader:
+
+- Custom Dataset: Define BitCoinDataSet class for handling Bitcoin data.
+- DataLoader: Create data loaders for batch processing.
+Model Architecture:
+
+- RNN with LSTM: Define an RNN model using LSTM layers for sequential data processing.
+Training:
+
+- Loss and Optimizer: Use MSE loss and Adam optimizer.
+- Training Loop: Train the model over multiple epochs with batch processing and loss tracking.
+- Evaluation:
+
+- Predictions: Make predictions on the test set.
+- Performance Metric: Calculate R2 score to evaluate model performance.
+Process
+Load and Preprocess Data:
+
+Read CSV data.
+Standardize features and targets.
+Split data into training and testing sets.
+Convert data to PyTorch tensors.
+- Define Dataset and DataLoader:
+
+Implement BitCoinDataSet class.
+Initialize DataLoader for training and testing data.
+- Build and Train RNN Model:
+
+Define RNN model architecture with LSTM layers.
+Set loss function and optimizer.
+Train the model, tracking loss over epochs.
+- Evaluate Model:
+
+Make predictions on the test set.
+Inverse transform predictions to original scale.
+Calculate and print the R2 score.
