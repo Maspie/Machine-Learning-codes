@@ -79,3 +79,10 @@ Train the model, tracking loss over epochs.
 Make predictions on the test set.
 Inverse transform predictions to original scale.
 Calculate and print the R2 score.
+
+### Temperature forecast
+
+- Load Dataset: Read CSV and create a time index.
+- Prepare Data: Define feature (Time) and target (Temperature (C)).
+- Train Model: Linear regression on Time and Temperature (C).
+- Visualize: Plot original and predicted temperatures, and lagged temperature data.
