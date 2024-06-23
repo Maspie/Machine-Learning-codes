@@ -90,4 +90,13 @@ Calculate and print the R2 score.
 ### Action Recognition 1
 a comprehensive pipeline for preprocessing and classifying video data using deep learning techniques. It begins with functions for extracting, resizing, and normalizing frames from a video to prepare datasets for training. A 3D convolutional neural network (3D CNN) is then designed and trained to classify videos into predefined categories based on their visual content. The model employs layers like Conv3D and MaxPooling3D for feature extraction and spatial downsampling, respectively, and uses dropout for regularization to prevent overfitting.
 
+Key tools used include:
+
+OpenCV (cv2): For video processing tasks like frame extraction and resizing.
+NumPy: For efficient array operations.
+TensorFlow/Keras: For building and training the neural network.
+Matplotlib and Seaborn: For visualization, such as plotting the training history and confusion matrix.
+Pickle: For saving and loading the model's training history and label encoder.
+The complete process includes training the model with a dataset, evaluating its performance, and using it to predict the category of new videos, showcasing the effectiveness of 3D CNNs in understanding and categorizing temporal and spatial patterns in video data.
+
 
