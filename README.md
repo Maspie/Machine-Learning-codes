@@ -86,3 +86,8 @@ Calculate and print the R2 score.
 - Prepare Data: Define feature (Time) and target (Temperature (C)).
 - Train Model: Linear regression on Time and Temperature (C).
 - Visualize: Plot original and predicted temperatures, and lagged temperature data.
+
+### Action Recognition 1
+a comprehensive pipeline for preprocessing and classifying video data using deep learning techniques. It begins with functions for extracting, resizing, and normalizing frames from a video to prepare datasets for training. A 3D convolutional neural network (3D CNN) is then designed and trained to classify videos into predefined categories based on their visual content. The model employs layers like Conv3D and MaxPooling3D for feature extraction and spatial downsampling, respectively, and uses dropout for regularization to prevent overfitting.
+
+
